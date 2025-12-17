@@ -1,0 +1,132 @@
+/* Reset basique */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fond général */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Conteneur principal */
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Titre */
+.container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a202c; /* couleur bien contrastée */
+    border-bottom: 2px solid #e2e8f0;
+}
+
+
+/* Formulaire horizontal */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 200px; /* largeur flexible */
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #4a5568;
+    font-size: 0.95rem;
+}
+
+input {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e0;
+    font-size: 0.95rem;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+/* Bouton */
+button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s, opacity 0.15s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+    opacity: 0.95;
+}
+
+/* Messages d'information */
+.info-box {
+    background: #edf2f7;
+    border-left: 4px solid #667eea;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    color: #2d3748;
+    font-size: 0.9rem;
+}
+
+/* Message d'erreur */
+.error {
+    background: #fed7d7;
+    color: #9b2c2c;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+    }
+    .form-group {
+        width: 100%;
+    }
+    button {
+        width: 100%;
+    }
+}
+h1{
+    text-align: center;
+}
+
+
